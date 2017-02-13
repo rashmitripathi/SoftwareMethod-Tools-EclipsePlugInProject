@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="edu.umkc.rashmi.asteroidutilInterfaces.Vector">
+   </extension>
+   <extension
+         id="edu.umkc.rashmi.asteroidutilInterfaces.Clock"
+         point="edu.umkc.rashmi.asteroidutilInterfaces.Clock">
+   </extension>
+
+</plugin>

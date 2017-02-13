@@ -1,0 +1,17 @@
+package edu.umkc.rashmi.asteroidengineplugin;
+
+import asteroidviewplugin.gameInterface.StartGameInterface;
+
+public class StartGame implements StartGameInterface {
+
+	public StartGame() {
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public void startGame() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

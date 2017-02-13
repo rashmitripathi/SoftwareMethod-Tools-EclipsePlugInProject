@@ -1,0 +1,8 @@
+package org.psnbtech.util;
+
+public class Snippet {
+	public static void main(String[] args) {
+		edu.umkc.rashmi.asteroidutilInterfaces.Clock
+	}
+}
+

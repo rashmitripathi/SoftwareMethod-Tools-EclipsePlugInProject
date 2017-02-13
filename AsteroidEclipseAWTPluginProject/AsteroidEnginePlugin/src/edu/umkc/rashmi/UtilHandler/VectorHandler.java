@@ -1,0 +1,35 @@
+package edu.umkc.rashmi.UtilHandler;
+
+import org.eclipse.core.commands.AbstractHandler;
+import org.eclipse.core.commands.ExecutionEvent;
+import org.eclipse.core.commands.ExecutionException;
+import org.eclipse.core.runtime.CoreException;
+import org.eclipse.core.runtime.IConfigurationElement;
+import org.eclipse.core.runtime.Platform;
+
+import edu.umkc.rashmi.asteroid.utilInterfaces.IVector;
+
+public class VectorHandler extends AbstractHandler {
+
+	@Override
+	public Object execute(ExecutionEvent event) throws ExecutionException {
+
+		
+		IConfigurationElement[] config = Platform.getExtensionRegistry()
+					.getConfigurationElementsFor("edu.umkc.rashmi.AsteroidEnginePlugin.Clock");
+		try {	
+		for (IConfigurationElement e : config) {
+			System.out.println("Evaluating extension");
+			final Object o = e.createExecutableExtension("class");
+				((IVector) o).Vector2(0.0);}
+		} catch (CoreException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+
+		return null;
+	}
+
+
+}
+

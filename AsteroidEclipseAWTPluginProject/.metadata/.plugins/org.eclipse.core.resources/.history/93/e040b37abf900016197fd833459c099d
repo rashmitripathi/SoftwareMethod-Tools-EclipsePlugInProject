@@ -1,0 +1,29 @@
+package edu.umkc.rashmi.asteroidengineplugin;
+
+
+//import org.eclipse.swt.widgets.Display;
+//import org.eclipse.swt.widgets.Shell;
+
+import org.psnbtech.Game;
+
+import asteroidviewplugin.gameInterface.GameInterface;
+//import edu.umkc.rashmi.asteroid.Game;
+//import edu.umkc.rashmi.asteroidSWT.displayGame;
+
+public class gameScreen implements StartGameInterface {
+
+	
+	@Override
+	public void startGame() 
+ {
+		
+		final Game game=new Game();		
+		
+		new Thread(){
+			public void run() {
+				game.startGame();
+				
+			}}.start();
+	}
+
+}

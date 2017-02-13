@@ -1,0 +1,7 @@
+package asteroidviewplugin.gameInterface;
+
+public interface GameInterface {
+	
+	public void startGame();
+
+}

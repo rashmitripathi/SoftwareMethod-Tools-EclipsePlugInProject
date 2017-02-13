@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension-point id="edu.umkc.rashmi.asteroidutilInterfaces.Vector" name="Vector" schema="schema/edu.umkc.rashmi.asteroidutilInterfaces.Vector.exsd"/>
+   <extension-point id="edu.umkc.rashmi.asteroidutilInterfaces.Clock" name="Clock" schema="schema/edu.umkc.rashmi.asteroidutilInterfaces.Clock.exsd"/>
+   <extension
+         point="edu.umkc.rashmi.AsteroidStartPlugin.StartGame">
+      <StartGame
+            class="edu.umkc.rashmi.asteroidengineplugin.StartGame">
+      </StartGame>
+   </extension>
+
+</plugin>
